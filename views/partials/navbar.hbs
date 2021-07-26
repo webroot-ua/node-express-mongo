@@ -1,0 +1,20 @@
+<nav class="teal darken-4">
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo" title="Node Express MongoDB">FullStackApp</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isIndex}}
+      <li><a class="active" href="/">Todos</a></li>
+      {{else}}
+      <li><a href="/">Todos</a></li>
+      {{/if}}
+      
+      {{#if isCreate}}
+       <li><a class="active" href="/create">Create</a></li>
+      {{else}}
+       <li><a href="/create">Create</a></li>
+      {{/if}}
+      
+    </ul>
+  </div>
+</nav>
